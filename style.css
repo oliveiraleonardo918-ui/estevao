@@ -86,6 +86,27 @@ nav a:hover {
     box-shadow: 0 0 25px var(--accent-color-1);
 }
 
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: var(--shadow-deep);
+}
+
+.about-content h2 {
+    font-family: var(--font-headline);
+    font-size: 2.5rem;
+    color: var(--accent-color-1);
+    margin-bottom: 1.5rem;
+}
+
 .speakers-section {
     padding: 4rem 2rem;
     text-align: center;
@@ -147,13 +168,24 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 3rem;
-    }
     header {
         flex-direction: column;
     }
+
     nav {
         margin-top: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        order: -1; /* Displays image on top on mobile */
+        margin-bottom: 2rem;
     }
 }
