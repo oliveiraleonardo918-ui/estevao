@@ -1,14 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaracatuTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <header>
+        <div class="logo">MaracatuTech</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#speakers">Speakers</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#sponsors">Sponsors</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Where Rhythm Meets a New Algorithm</h1>
+                <p>Join us for a 3-day conference exploring the intersection of technology, culture, and the vibrant energy of Maracatu.</p>
+                <a href="#register" class="cta-button">Register Now</a>
+            </div>
+        </section>
+
+        <section id="speakers" class="speakers-section">
+            <h2>Featured Speakers</h2>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <img src="https://i.pravatar.cc/150?img=1" alt="Speaker 1">
+                    <h3>Ada Lovelace</h3>
+                    <p>Pioneer of Computing</p>
+                </div>
+                <div class="speaker-card">
+                    <img src="https://i.pravatar.cc/150?img=2" alt="Speaker 2">
+                    <h3>Grace Hopper</h3>
+                    <p>Computer Scientist</p>
+                </div>
+                <div class="speaker-card">
+                    <img src="https://i.pravatar.cc/150?img=3" alt="Speaker 3">
+                    <h3>Alan Turing</h3>
+                    <p>Father of AI</p>
+                </div>
+                 <div class="speaker-card">
+                    <img src="https://i.pravatar.cc/150?img=4" alt="Speaker 4">
+                    <h3>Nise da Silveira</h3>
+                    <p>Rebel cientist</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2024 MaracatuTech. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>

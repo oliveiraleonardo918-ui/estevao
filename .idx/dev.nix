@@ -7,6 +7,9 @@
   packages = [
     pkgs.nodejs_22
     pkgs.python3
+    pkgs.nodePackages.typescript
+    pkgs.nodePackages.tailwindcss
+    pkgs.nodePackages.beautify
   ];
   # Sets environment variables in the workspace
   env = {};
@@ -15,6 +18,9 @@
     extensions = [
       # "vscodevim.vim"
       "google.gemini-cli-vscode-ide-companion"
+      "esbenp.prettier-vscode"
+      "dbaeumer.vscode-eslint"
+      "ritwickdey.liveserver"
     ];
     # Enable previews and customize configuration
     previews = {
